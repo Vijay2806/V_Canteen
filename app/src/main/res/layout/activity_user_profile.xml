@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.User_profile">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--    profile image-->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/profilepic"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/profilepic_img"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_below="@+id/profilepic_img"
+            android:id="@+id/name_linear">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/profile_fname_edt"
+                android:hint="First name"
+                android:layout_weight="1"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/profile_lname_edt"
+                android:hint="Last name"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:layout_below="@id/profilepic_img"
+            android:id="@+id/profile_name_edt"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_email_edt"
+            android:hint="E-mail"
+            android:layout_below="@+id/name_linear"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_user_id_edt"
+            android:hint="User id"
+            android:layout_below="@+id/profile_email_edt"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_phone_edt"
+            android:hint="Phone"
+            android:layout_below="@+id/profile_user_id_edt"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_dob_edt"
+            android:hint="D O B"
+            android:layout_below="@+id/profile_phone_edt"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_below="@+id/profile_dob_edt"
+            android:id="@+id/button_linear">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/update_profile_button"
+                android:text="Update"
+                android:textAllCaps="false"
+                android:layout_weight="1"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cancel_profile_btn"
+                android:text="Cancel"
+                android:textAllCaps="false"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

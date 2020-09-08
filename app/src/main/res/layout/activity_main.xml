@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="40dp"
+
+    android:background="@drawable/bg9"
+    tools:context=".user.MainActivity">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/userchange"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/useraccountchange_img"/>
+
+<!--    V_Canteen Text-->
+    <TextView
+        android:id="@+id/vcanteentxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/loginrelative"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="cursive"
+        android:text="V-Canteen"
+        android:paddingVertical="30dp"
+        android:textColor="@color/orange"
+        android:textSize="50dp" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginrelative"
+        android:padding="10dp"
+        android:background="@drawable/login_relative_border"
+        android:layout_centerInParent="true">
+<!--        User id-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/useridtxtly"
+            android:layout_margin="10dp"
+            app:boxStrokeColor="@color/orange"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:errorEnabled="true">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="User Id "
+                android:maxLength="10"
+                android:id="@+id/useridtxt"/>
+        </com.google.android.material.textfield.TextInputLayout>
+<!--        Password -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/useridtxtly"
+            android:id="@+id/userpasswordtxtly"
+            android:layout_margin="10dp"
+            app:boxStrokeColor="@color/orange"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:passwordToggleEnabled="true"
+            app:errorEnabled="true">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password "
+                android:inputType="textPassword"
+                android:id="@+id/userpasswordtxt"/>
+        </com.google.android.material.textfield.TextInputLayout>
+<!--        Login Button-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:id="@+id/loginbutton"
+            android:layout_margin="10dp"
+            android:background="@drawable/login_register_button"
+            android:layout_below="@+id/userpasswordtxtly"/>
+    </RelativeLayout>
+<!--    Forgot Password-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:padding="10dp"
+                android:layout_below="@id/loginrelative"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/forgotpasswordtxt"
+                android:layout_height="wrap_content"
+                android:text="@string/forgotpassword"
+                android:textColor="@color/orange"/>
+<!--    New user Register-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="40dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/if_u_reg"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/orange"
+            android:id="@+id/registerpagetxt"
+            android:text="@string/register"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

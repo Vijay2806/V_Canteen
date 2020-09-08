@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="40dp"
+    android:background="@drawable/bg9"
+    tools:context=".admin.Admin_Login">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/userchange"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/adminaccountchange_img"/>
+    <TextView
+        android:id="@+id/vcanteentxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/loginrelative"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="cursive"
+        android:text="V-Canteen"
+        android:paddingVertical="30dp"
+        android:textColor="@color/orange"
+        android:textSize="50dp" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginrelative"
+        android:padding="10dp"
+        android:background="@drawable/login_relative_border"
+        android:layout_centerInParent="true">
+        <!--        User id-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/aidtxtly"
+            android:layout_margin="10dp"
+            app:boxStrokeColor="@color/orange"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:errorEnabled="true">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Admin Id "
+                android:maxLength="10"
+                android:id="@+id/aidtxt"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <!--        Password -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/aidtxtly"
+            android:id="@+id/apasswordtxtly"
+            android:layout_margin="10dp"
+            app:boxStrokeColor="@color/orange"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:passwordToggleEnabled="true"
+            app:errorEnabled="true">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password "
+                android:inputType="textPassword"
+                android:id="@+id/apasswordtxt"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <!--        Login Button-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:id="@+id/aloginbutton"
+            android:layout_margin="10dp"
+            android:background="@drawable/login_register_button"
+            android:layout_below="@+id/apasswordtxtly"/>
+    </RelativeLayout>
+    <!--    Forgot Password-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_below="@id/loginrelative"
+        android:layout_centerHorizontal="true"
+        android:text="Admin Login"
+        android:textColor="@color/orange"
+        android:textSize="20dp"/>
+
+</RelativeLayout>

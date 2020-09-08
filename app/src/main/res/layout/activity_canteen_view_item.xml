@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey"
+    tools:context=".canteen.Canteen_item_recyclerview">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg5"
+        android:padding="20dp">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Item"
+            android:background="@drawable/login_register_button"
+            android:textColor="@color/white"
+            android:id="@+id/acvi_add"
+            android:layout_margin="5dp"
+            android:layout_alignParentBottom="true"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/acvi_recycler"
+            android:layout_above="@+id/acvi_add"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

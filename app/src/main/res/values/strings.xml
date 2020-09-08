@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">V Canteen</string>
+    <string name="login">Login</string>
+    <string name="register"> Register </string>
+    <string name="if_u_log">Already an user ? </string>
+    <string name="if_u_reg">New user ? </string>
+    <string name="forgotpassword">Forgt password ?</string>
+    <string name="url">http://192.168.0.103/API/V_canteen/</string>
+    <string name="title_activity_user_home">V-Canteen</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string-array name="item_types_array">
+        <item>Lunch</item>
+        <item>Snacks</item>
+        <item>Items For Fast</item>
+        <item>Bakery</item>
+        <item>South Indian</item>
+        <item>Chinese</item>
+        <item>Wraps/Frankies</item>
+        <item>Sandwitches</item>
+        <item>Special Rice</item>
+        <item>Juice</item>
+        <item>Hot and Cold</item>
+    </string-array>
+    <string name="home_second">Home Second</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="landline_ext">Landline Ext</string>
+    <string name="phone">Mobile No</string>
+    <string name="id">ID</string>
+    <string name="dob">DOB</string>
+    <string name="gender">Gender</string>
+    <string name="price">Price </string>
+    <string name="type">Type </string>
+    <string name="quantity">Quantity </string>
+</resources>

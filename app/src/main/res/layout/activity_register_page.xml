@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="30dp"
+    android:orientation="vertical"
+    android:weightSum="5"
+    android:background="@drawable/bg9"
+    tools:context=".user.Register_page">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_weight="2">
+<!--        V-Canteen Text-->
+        <TextView
+            android:id="@+id/vcanteentxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:text="V-Canteen"
+            android:textColor="@color/orange"
+            android:textSize="50dp" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scroll_view"
+        android:background="@drawable/login_relative_border">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:id="@+id/registerrelative">
+
+<!--        Name field-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/linearname"
+            android:layout_margin="5dp"
+            android:weightSum="2">
+<!--            First name-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fnametly"
+            app:errorEnabled="true"
+            android:layout_weight="1"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"
+                android:id="@+id/firstnametxt"
+                android:hint="First name" />
+        </com.google.android.material.textfield.TextInputLayout>
+<!--            Last name-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lnametly"
+            app:errorEnabled="true"
+            android:layout_weight="1"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lastnametxt"
+                android:hint="Last name"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+<!--        E-mail Field-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearname"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxStrokeColor="@color/orange"
+            app:errorEnabled="true"
+            android:id="@+id/emailtxtly"
+            android:layout_margin="5dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/emailtxt"
+                android:inputType="textEmailAddress"
+                android:hint="E-mail" />
+        </com.google.android.material.textfield.TextInputLayout>
+<!--        Mobile no field-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emailtxtly"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxStrokeColor="@color/orange"
+            app:errorEnabled="true"
+            android:id="@+id/mobilenotxtly"
+            android:layout_margin="5dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/mobilenotxt"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:hint="Mobile no" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <!--        ID-Card number-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mobilenotxtly"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxStrokeColor="@color/orange"
+            app:errorEnabled="true"
+            android:id="@+id/idnotxtly"
+            android:layout_margin="5dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/idnotxt"
+                android:hint="ID number" />
+        </com.google.android.material.textfield.TextInputLayout>
+<!--        Password-->
+        <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idnotxtly"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxStrokeColor="@color/orange"
+        app:errorEnabled="true"
+        android:id="@+id/passwordnotxtly"
+        app:passwordToggleEnabled="true"
+        android:layout_margin="5dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/passwordtxt"
+            android:inputType="textPassword"
+            android:hint="Password" />
+    </com.google.android.material.textfield.TextInputLayout>
+<!--        Confirm Password-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/passwordnotxtly"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxStrokeColor="@color/orange"
+            app:errorEnabled="true"
+            android:id="@+id/confirmpasswordnotxtly"
+            app:passwordToggleEnabled="true"
+            android:layout_margin="10dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/confirmpasswordtxt"
+                android:inputType="textPassword"
+                android:hint="Confirm Password" />
+        </com.google.android.material.textfield.TextInputLayout>
+<!--        Date of birth-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/confirmpasswordnotxtly"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxStrokeColor="@color/orange"
+            app:errorEnabled="true"
+            android:id="@+id/dobtxtly"
+            app:passwordToggleEnabled="true"
+            android:layout_margin="10dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dobtxt"
+                android:hint="Date of birth" />
+        </com.google.android.material.textfield.TextInputLayout>
+<!--        Gender Radio Buttons-->
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:id="@+id/genderradiogroup"
+            android:layout_below="@+id/dobtxtly">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:textColor="@color/orange"
+                android:id="@+id/malerbtn"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:textColor="@color/orange"
+                android:id="@+id/femalerbtn"/>
+        </RadioGroup>
+        <!--        Terms and Conditions-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/termslinearly"
+            android:layout_margin="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/genderradiogroup"
+            android:orientation="horizontal">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/termscheckbox"
+                android:outlineSpotShadowColor="@color/orange"
+                android:text="I Agree to the "/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terms and Conditions"
+                android:id="@+id/terms_condition_text"
+                android:textColor="@color/orange"/>
+        </LinearLayout>
+    </RelativeLayout>
+    </ScrollView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical">
+<!--        Register Button-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_register_button"
+            android:layout_margin="10dp"
+            android:id="@+id/registerbutton"
+            android:textColor="@color/white"
+            android:text="Sign Up"/>
+<!--        Already have an account text-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/redirect_login"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already have an account ? "/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:id="@+id/register_login_txt"
+                android:textColor="@color/orange"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    </LinearLayout>

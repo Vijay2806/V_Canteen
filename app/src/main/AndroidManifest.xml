@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.vijay.v_canteen">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <dist:module dist:instant="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/vcanteen_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".user.User_order_page"></activity>
+        <activity android:name=".canteen.Canteen_selected_item" />
+        <activity android:name=".user.User_canteen_items" />
+        <activity android:name=".user.User_blocked" />
+        <activity android:name=".canteen.Canteen_selected_user" />
+        <activity android:name=".admin.Selected_user" />
+        <activity android:name=".user.User_selected_item" />
+        <activity
+            android:name=".user.User_home"
+            android:label="@string/title_activity_user_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".admin.Admin_view_canteen" />
+        <activity
+            android:name=".user.SplashScreen"
+            android:theme="@style/NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".admin.Admin_check_canteen_stats" />
+        <activity android:name=".admin.Admin_profile" />
+        <activity android:name=".admin.Admin_manage_user" />
+        <activity android:name=".admin.Admin_manage_canteen" />
+        <activity android:name=".canteen.Canteen_profile" />
+        <activity android:name=".canteen.Canteen_check_reviews" />
+        <activity android:name=".canteen.Canteen_check_stats" />
+        <activity android:name=".canteen.Canteen_check_availability" />
+        <activity android:name=".canteen.Canteen_notifications" />
+        <activity android:name=".canteen.Canteen_manage_users" />
+        <activity android:name=".canteen.Canteen_item_recyclerview" />
+        <activity android:name=".canteen.Canteen_add_item" />
+        <activity android:name=".admin.Admin_add_canteen" />
+        <activity android:name=".user.User_profile" />
+        <activity android:name=".admin.Admin_home" />
+        <activity android:name=".canteen.Canteen_home" />
+        <activity
+            android:name=".admin.Admin_Login"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".canteen.Canteen_Login"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".user.Register_page"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".user.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
